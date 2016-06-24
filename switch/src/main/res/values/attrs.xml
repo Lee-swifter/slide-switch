@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="slide_switch">
+        <attr name="front_color" format="color" />
+        <attr name="back_color" format="color" />
+        <attr name="switch_color" format="color" />
+        <attr name="state" format="boolean" />
+        <attr name="shape">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+        <attr name="min_width" format="dimension" />
+        <attr name="min_height" format="dimension" />
+        <attr name="boundary_distance" format="dimension" />
+        <attr name="open_direction" >
+            <enum name="right" value="1" />
+            <enum name="left" value="2" />
+        </attr>
+        <attr name="slideable" format="boolean" />
+    </declare-styleable>
+</resources>

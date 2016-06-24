@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:switch="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dip"
+    android:orientation="vertical">
+
+    <lic.swifter.demo.SlideSwitch
+        android:id="@+id/first_switch"
+        android:layout_width="120dip"
+        android:layout_height="40dip"
+        android:layout_margin="10dip"
+        switch:front_color="@color/colorAccent"
+        switch:back_color="@android:color/darker_gray"
+        switch:switch_color="@android:color/holo_blue_light"
+        switch:state="true"
+        switch:shape="circle"
+        switch:boundary_distance="3dip"
+        switch:open_direction="right"
+        switch:slideable="true"/>
+
+    <lic.swifter.demo.SlideSwitch
+        android:id="@+id/second_switch"
+        android:layout_width="120dip"
+        android:layout_height="40dip"
+        android:layout_margin="10dip"
+        switch:front_color="@color/colorPrimary"
+        switch:back_color="@android:color/darker_gray"
+        switch:switch_color="@android:color/holo_green_light"
+        switch:state="false"
+        switch:shape="rect"
+        switch:boundary_distance="3dip"
+        switch:open_direction="left"
+        switch:slideable="true"/>
+
+    <lic.swifter.demo.SlideSwitch
+        android:id="@+id/third_switch"
+        android:layout_width="120dip"
+        android:layout_height="40dip"
+        android:layout_margin="10dip"
+        switch:front_color="@color/colorPrimaryDark"
+        switch:back_color="@android:color/darker_gray"
+        switch:switch_color="@android:color/holo_red_light"
+        switch:state="false"
+        switch:shape="circle"
+        switch:boundary_distance="3dip"
+        switch:open_direction="right"
+        switch:slideable="false"/>
+
+</LinearLayout>
