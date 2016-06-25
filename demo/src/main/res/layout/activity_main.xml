@@ -67,7 +67,6 @@
         switch:boundary_distance="5dip"
         switch:open_direction="right"
         switch:shape="circle"
-        switch:slideable="false"
         switch:state="false" />
 
 </LinearLayout>
