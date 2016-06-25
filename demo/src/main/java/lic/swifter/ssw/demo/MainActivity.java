@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         SlideSwitch firstSwitch = (SlideSwitch) findViewById(R.id.first_switch);
         SlideSwitch secondSwitch = (SlideSwitch) findViewById(R.id.second_switch);
         final SlideSwitch thirdSwitch = (SlideSwitch) findViewById(R.id.third_switch);
+        SlideSwitch fourthSwitch = (SlideSwitch) findViewById(R.id.fourth_switch);
 
         if (firstSwitch != null) {
             firstSwitch.setSlideListener(new SlideSwitch.SlideListener() {
@@ -35,14 +36,14 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void open() {
                     Toast.makeText(MainActivity.this, "second switch open.", Toast.LENGTH_SHORT).show();
-                    if(thirdSwitch != null)
+                    if (thirdSwitch != null)
                         thirdSwitch.setState(true);
                 }
 
                 @Override
                 public void close() {
                     Toast.makeText(MainActivity.this, "second switch close.", Toast.LENGTH_SHORT).show();
-                    if(thirdSwitch != null)
+                    if (thirdSwitch != null)
                         thirdSwitch.setState(false);
                 }
             });
@@ -60,5 +61,18 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
+
+        if (fourthSwitch != null)
+            fourthSwitch.setSlideListener(new SlideSwitch.SlideListener() {
+                @Override
+                public void open() {
+                    Toast.makeText(MainActivity.this, "fourth switch open.", Toast.LENGTH_SHORT).show();
+                }
+
+                @Override
+                public void close() {
+                    Toast.makeText(MainActivity.this, "fourth switch close.", Toast.LENGTH_SHORT).show();
+                }
+            });
     }
 }

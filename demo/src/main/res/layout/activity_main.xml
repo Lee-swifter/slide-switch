@@ -11,41 +11,63 @@
         android:layout_width="120dip"
         android:layout_height="40dip"
         android:layout_margin="10dip"
+        switch:back_color="@android:color/darker_gray"
+        switch:boundary_distance="3dip"
         switch:front_color="@color/colorAccent"
-        switch:back_color="@android:color/darker_gray"
-        switch:switch_color="@android:color/holo_blue_light"
+        switch:open_direction="right"
+        switch:shape="circle"
+        switch:slideable="true"
         switch:state="true"
-        switch:shape="circle"
-        switch:boundary_distance="3dip"
-        switch:open_direction="right"
-        switch:slideable="true"/>
+        switch:switch_color="@android:color/holo_blue_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal">
+
+        <lic.swifter.demo.SlideSwitch
+            android:id="@+id/second_switch"
+            android:layout_width="120dip"
+            android:layout_height="40dip"
+            android:layout_margin="10dip"
+            switch:back_color="@android:color/darker_gray"
+            switch:boundary_distance="3dip"
+            switch:front_color="@color/colorPrimary"
+            switch:open_direction="left"
+            switch:shape="rect"
+            switch:slideable="true"
+            switch:state="false"
+            switch:switch_color="@android:color/holo_green_light" />
+
+        <lic.swifter.demo.SlideSwitch
+            android:id="@+id/third_switch"
+            android:layout_width="120dip"
+            android:layout_height="40dip"
+            android:layout_margin="10dip"
+            switch:back_color="@android:color/darker_gray"
+            switch:boundary_distance="3dip"
+            switch:front_color="@color/colorPrimaryDark"
+            switch:open_direction="right"
+            switch:shape="circle"
+            switch:slideable="false"
+            switch:state="false"
+            switch:switch_color="@android:color/holo_red_light" />
+
+    </LinearLayout>
 
     <lic.swifter.demo.SlideSwitch
-        android:id="@+id/second_switch"
+        android:id="@+id/fourth_switch"
         android:layout_width="120dip"
         android:layout_height="40dip"
         android:layout_margin="10dip"
-        switch:front_color="@color/colorPrimary"
-        switch:back_color="@android:color/darker_gray"
-        switch:switch_color="@android:color/holo_green_light"
-        switch:state="false"
-        switch:shape="rect"
-        switch:boundary_distance="3dip"
-        switch:open_direction="left"
-        switch:slideable="true"/>
-
-    <lic.swifter.demo.SlideSwitch
-        android:id="@+id/third_switch"
-        android:layout_width="120dip"
-        android:layout_height="40dip"
-        android:layout_margin="10dip"
-        switch:front_color="@color/colorPrimaryDark"
-        switch:back_color="@android:color/darker_gray"
-        switch:switch_color="@android:color/holo_red_light"
-        switch:state="false"
-        switch:shape="circle"
-        switch:boundary_distance="3dip"
+        switch:back_color="@android:color/holo_green_light"
+        switch:switch_color="@android:color/holo_purple"
+        switch:front_color="@android:color/holo_orange_light"
+        switch:boundary_distance="5dip"
         switch:open_direction="right"
-        switch:slideable="false"/>
+        switch:shape="circle"
+        switch:slideable="false"
+        switch:state="false" />
 
 </LinearLayout>
