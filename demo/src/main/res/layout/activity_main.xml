@@ -6,7 +6,7 @@
     android:layout_margin="10dip"
     android:orientation="vertical">
 
-    <lic.swifter.demo.SlideSwitch
+    <lic.swifter.ssw.SlideSwitch
         android:id="@+id/first_switch"
         android:layout_width="120dip"
         android:layout_height="40dip"
@@ -26,7 +26,7 @@
         android:layout_margin="5dip"
         android:orientation="horizontal">
 
-        <lic.swifter.demo.SlideSwitch
+        <lic.swifter.ssw.SlideSwitch
             android:id="@+id/second_switch"
             android:layout_width="120dip"
             android:layout_height="40dip"
@@ -40,7 +40,7 @@
             switch:state="false"
             switch:switch_color="@android:color/holo_green_light" />
 
-        <lic.swifter.demo.SlideSwitch
+        <lic.swifter.ssw.SlideSwitch
             android:id="@+id/third_switch"
             android:layout_width="120dip"
             android:layout_height="40dip"
@@ -56,7 +56,7 @@
 
     </LinearLayout>
 
-    <lic.swifter.demo.SlideSwitch
+    <lic.swifter.ssw.SlideSwitch
         android:id="@+id/fourth_switch"
         android:layout_width="120dip"
         android:layout_height="40dip"

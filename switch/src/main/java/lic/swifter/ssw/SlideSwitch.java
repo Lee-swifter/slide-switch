@@ -1,4 +1,4 @@
-package lic.swifter.demo;
+package lic.swifter.ssw;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -10,14 +10,14 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import android.os.Bundle;
 import android.os.Looper;
+import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.animation.AccelerateDecelerateInterpolator;
-
-import lic.swifter.ssw.R;
 
 public class SlideSwitch extends View {
 
@@ -314,5 +314,23 @@ public class SlideSwitch extends View {
 
     public void setSlideListener(SlideListener listener) {
         this.listener = listener;
+    }
+
+    @Override
+    protected Parcelable onSaveInstanceState() {
+        Bundle bundle = new Bundle();
+        bundle.putParcelable("parcelableState", super.onSaveInstanceState());
+        bundle.putBoolean("state", state);
+        return super.onSaveInstanceState();
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Parcelable parcelableState) {
+        if (parcelableState instanceof Bundle) {
+            Bundle bundle = (Bundle) parcelableState;
+            state = bundle.getBoolean("state");
+            parcelableState = bundle.getParcelable("parcelableState");
+        }
+        super.onRestoreInstanceState(parcelableState);
     }
 }
