@@ -3,9 +3,6 @@ A switch view for Android, it looks better than the official, support both slide
 
 Inspired by [Leaking/SlideSwitch](https://github.com/Leaking/SlideSwitch), the rep is great but there are something which are unsuitable for me, so I modifid some code and make this rep. 
 
-###This is looks like :
-![gif](https://github.com/Lee-swifter/slide-switch/blob/master/slide-switch.gif)
-
 ###Attributes:
 ```xml
 <declare-styleable name="slide_switch">
