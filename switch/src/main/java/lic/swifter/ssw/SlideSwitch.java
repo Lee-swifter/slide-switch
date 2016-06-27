@@ -78,7 +78,7 @@ public class SlideSwitch extends View {
         super(context, attrs, defStyleAttr);
 
         paint = new Paint();
-        paint.setAntiAlias(true);   //设置抗锯齿
+        paint.setAntiAlias(true);
 
         back_rect = new Rect();
         front_rect = new Rect();
