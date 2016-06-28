@@ -20,5 +20,5 @@ android {
 }
 
 dependencies {
-    compile project(':switch')
+    compile 'lic.swifter.ssw:switch:0.0.1'
 }
