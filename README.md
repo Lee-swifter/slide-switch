@@ -2,7 +2,8 @@
 A switch view for Android, it looks better than the official, support both slide and click.
 
 Inspired by [Leaking/SlideSwitch](https://github.com/Leaking/SlideSwitch), the rep is great but there are something which are unsuitable for me, so I modified some code and made this rep.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---
 
 ###Usage
 ***Gradle***
