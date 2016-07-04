@@ -8,7 +8,7 @@ Inspired by [Leaking/SlideSwitch](https://github.com/Leaking/SlideSwitch), the r
 ###Usage
 ***Gradle***
 ```gradle
-compile 'lic.swifter.ssw:switch:0.0.1'
+compile 'lic.swifter.ssw:switch:0.0.2'
 ```
 
 ***Maven***
@@ -16,7 +16,7 @@ compile 'lic.swifter.ssw:switch:0.0.1'
 <dependency>
   <groupId>lic.swifter.ssw</groupId>
   <artifactId>switch</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <type>pom</type>
 </dependency>
 ```

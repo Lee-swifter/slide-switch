@@ -21,5 +21,5 @@ android {
 
 dependencies {
     compile 'com.android.support:appcompat-v7:23.3.0'
-    compile project(':switch')
+    compile 'lic.swifter.ssw:switch:0.0.2'
 }
