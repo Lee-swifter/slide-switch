@@ -3,6 +3,24 @@ A switch view for Android, it looks better than the official, support both slide
 
 Inspired by [Leaking/SlideSwitch](https://github.com/Leaking/SlideSwitch), the rep is great but there are something which are unsuitable for me, so I modified some code and made this rep.
 
+---
+
+###Usage
+***Gradle***
+```gradle
+compile 'lic.swifter.ssw:switch:0.0.1'
+```
+
+***Maven***
+```xml
+<dependency>
+  <groupId>lic.swifter.ssw</groupId>
+  <artifactId>switch</artifactId>
+  <version>0.0.1</version>
+  <type>pom</type>
+</dependency>
+```
+
 ###Attributes:
 ```xml
 <declare-styleable name="slide_switch">
