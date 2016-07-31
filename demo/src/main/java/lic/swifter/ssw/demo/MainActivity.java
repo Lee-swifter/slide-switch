@@ -8,6 +8,8 @@ import lic.swifter.ssw.SlideSwitch;
 
 public class MainActivity extends AppCompatActivity {
 
+    //add a empty line
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
