@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="slide_switch">
+    <declare-styleable name="SlideSwitch">
         <attr name="front_color" format="color" />
         <attr name="back_color" format="color" />
         <attr name="switch_color" format="color" />

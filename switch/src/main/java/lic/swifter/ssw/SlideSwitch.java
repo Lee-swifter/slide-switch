@@ -3,6 +3,7 @@ package lic.swifter.ssw;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -19,6 +20,11 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.animation.AccelerateDecelerateInterpolator;
 
+/**
+ * 滑动开关控件具体实现
+ *
+ * @author Lee-Swifter
+ */
 public class SlideSwitch extends View {
 
     private final int SHAPE_RECT = 1;
@@ -85,17 +91,17 @@ public class SlideSwitch extends View {
         switch_rect = new Rect();
         circle_rect = new RectF();
 
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.slide_switch);
-        shape = typedArray.getInt(R.styleable.slide_switch_shape, SHAPE_RECT);
-        front_color = typedArray.getColor(R.styleable.slide_switch_front_color, Color.GREEN);
-        back_color = typedArray.getColor(R.styleable.slide_switch_back_color, Color.GRAY);
-        switch_color = typedArray.getColor(R.styleable.slide_switch_switch_color, Color.BLUE);
-        state = typedArray.getBoolean(R.styleable.slide_switch_state, false);
-        slideable = typedArray.getBoolean(R.styleable.slide_switch_slideable, true);
-        min_width = typedArray.getDimensionPixelSize(R.styleable.slide_switch_min_width, 280);
-        min_height = typedArray.getDimensionPixelSize(R.styleable.slide_switch_min_height, 140);
-        boundary_distance = typedArray.getDimensionPixelSize(R.styleable.slide_switch_boundary_distance, 5);
-        open_direction = typedArray.getInt(R.styleable.slide_switch_open_direction, STATE_RIGHT);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.SlideSwitch);
+        shape = typedArray.getInt(R.styleable.SlideSwitch_shape, SHAPE_RECT);
+        front_color = typedArray.getColor(R.styleable.SlideSwitch_front_color, Color.GREEN);
+        back_color = typedArray.getColor(R.styleable.SlideSwitch_back_color, Color.GRAY);
+        switch_color = typedArray.getColor(R.styleable.SlideSwitch_switch_color, Color.BLUE);
+        state = typedArray.getBoolean(R.styleable.SlideSwitch_state, false);
+        slideable = typedArray.getBoolean(R.styleable.SlideSwitch_slideable, true);
+        min_width = typedArray.getDimensionPixelSize(R.styleable.SlideSwitch_min_width, 280);
+        min_height = typedArray.getDimensionPixelSize(R.styleable.SlideSwitch_min_height, 140);
+        boundary_distance = typedArray.getDimensionPixelSize(R.styleable.SlideSwitch_boundary_distance, 5);
+        open_direction = typedArray.getInt(R.styleable.SlideSwitch_open_direction, STATE_RIGHT);
         typedArray.recycle();
 
         touch_slop = ViewConfiguration.get(context).getScaledTouchSlop();
@@ -143,6 +149,7 @@ public class SlideSwitch extends View {
     }
 
     @Override
+    @SuppressLint("ClickableViewAccessibility")
     public boolean onTouchEvent(MotionEvent event) {
         if (!slideable)
             return super.onTouchEvent(event);
