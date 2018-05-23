@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "27.0.1"
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "lic.swifter.ssw.demo"
@@ -20,6 +20,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:25.4.0'
-    compile 'lic.swifter.ssw:switch:0.0.2'
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+    implementation 'lic.swifter.ssw:switch:0.0.2'
 }
