@@ -8,17 +8,15 @@ import lic.swifter.ssw.SlideSwitch;
 
 public class MainActivity extends AppCompatActivity {
 
-    //add a empty line
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SlideSwitch firstSwitch = (SlideSwitch) findViewById(R.id.first_switch);
-        SlideSwitch secondSwitch = (SlideSwitch) findViewById(R.id.second_switch);
-        final SlideSwitch thirdSwitch = (SlideSwitch) findViewById(R.id.third_switch);
-        SlideSwitch fourthSwitch = (SlideSwitch) findViewById(R.id.fourth_switch);
+        final SlideSwitch firstSwitch = findViewById(R.id.first_switch);
+        final SlideSwitch secondSwitch = findViewById(R.id.second_switch);
+        final SlideSwitch thirdSwitch = findViewById(R.id.third_switch);
+        final SlideSwitch fourthSwitch = findViewById(R.id.fourth_switch);
 
         if (firstSwitch != null) {
             firstSwitch.setSlideListener(new SlideSwitch.SlideListener() {
