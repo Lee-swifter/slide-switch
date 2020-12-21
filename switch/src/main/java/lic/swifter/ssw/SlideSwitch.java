@@ -49,11 +49,11 @@ public class SlideSwitch extends View {
     private int movable_range;
     private int touch_slop;
 
-    private Paint paint;
-    private Rect back_rect;
-    private Rect front_rect;
-    private Rect switch_rect;
-    private RectF circle_rect;
+    private final Paint paint;
+    private final Rect back_rect;
+    private final Rect front_rect;
+    private final Rect switch_rect;
+    private final RectF circle_rect;
     private RectF circle_switch_rect;
 
     private float down_x;
@@ -136,10 +136,10 @@ public class SlideSwitch extends View {
                 break;
             case SHAPE_CIRCLE:
                 paint.setColor(back_color);
-                canvas.drawRoundRect(circle_rect, height / 2, height / 2, paint);
+                canvas.drawRoundRect(circle_rect, height / 2F, height / 2F, paint);
                 paint.setColor(front_color);
                 paint.setAlpha(front_alpha);
-                canvas.drawRoundRect(circle_rect, height / 2, height / 2, paint);
+                canvas.drawRoundRect(circle_rect, height / 2F, height / 2F, paint);
                 paint.setColor(switch_color);
                 canvas.drawOval(circle_switch_rect, paint);
                 break;
