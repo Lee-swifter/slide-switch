@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace "lic.swifter.ssw.demo"
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
