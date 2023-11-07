@@ -2,13 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
     namespace "lic.swifter.ssw.demo"
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion 'android-34'
 
     defaultConfig {
         applicationId "lic.swifter.ssw.demo"
         minSdkVersion 16
-        targetSdkVersion 30
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
     }
